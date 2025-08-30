@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4 url('assets/background.svg') no-repeat center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+.simulator {
+  margin: 2rem auto;
+  width: 300px;
+}
+
+.seven-segment {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin: auto;
+}
+
+.segment {
+  position: absolute;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.segment.on {
+  background-color: red;
+}
+
+/* Posisi segmen A-G */
+.segment.a { top: 0; left: 40px; width: 120px; height: 20px; }
+.segment.b { top: 20px; right: 0; width: 20px; height: 120px; }
+.segment.c { bottom: 20px; right: 0; width: 20px; height: 120px; }
+.segment.d { bottom: 0; left: 40px; width: 120px; height: 20px; }
+.segment.e { bottom: 20px; left: 0; width: 20px; height: 120px; }
+.segment.f { top: 20px; left: 0; width: 20px; height: 120px; }
+.segment.g { top: 140px; left: 40px; width: 120px; height: 20px; }
+
+.controls {
+  margin-top: 1rem;
+}

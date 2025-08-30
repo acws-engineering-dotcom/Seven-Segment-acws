@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi Seven Segment - ACWS Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo-acws.png" alt="Logo ACWS" class="logo" />
+    <h1>Simulasi Seven Segment</h1>
+    <p>Dokumentasi Visual untuk eBook ACWS Engineering</p>
+  </header>
+
+  <main>
+    <section class="simulator">
+      <div class="seven-segment" id="display">
+        <!-- Segmen A-G akan digambar via CSS -->
+        <div class="segment a"></div>
+        <div class="segment b"></div>
+        <div class="segment c"></div>
+        <div class="segment d"></div>
+        <div class="segment e"></div>
+        <div class="segment f"></div>
+        <div class="segment g"></div>
+      </div>
+
+      <div class="controls">
+        <label for="digit">Pilih Digit (0-9):</label>
+        <input type="number" id="digit" min="0" max="9" />
+        <button onclick="updateSegment()">Tampilkan</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ACWS Engineering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
